@@ -40,12 +40,12 @@ def rhombus(length, angle):
     None.
 
     """
-    interior_angle = 180 - angle
+    angles = 180 - angle
     for _ in range(2):
         leo.forward(length)
-        leo.left(angle)
+        leo.left(angles)
         leo.forward(length)
-        leo.left(interior_angle)
+        leo.left(angle)
 
 rhombus(50, 60)
 
