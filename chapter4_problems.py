@@ -21,3 +21,8 @@ ralph.pensize(6)
 # 4.11.1. Exercise
 # Write a function called rectangle that draws a rectangle with given side lengths. 
 # For example, here’s a rectangle that’s 80 units wide and 40 units tall.
+def rectangle(wide, tall):
+    ralph.forward(wide)
+    ralph.left(90)
+    ralph.forward(tall)
+
