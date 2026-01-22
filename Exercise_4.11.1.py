@@ -19,9 +19,24 @@ ralph.color("red")
 ralph.pensize(6)
 
 # 4.11.1. Exercise
-# Write a function called rectangle that draws a rectangle with given side lengths. 
+# Write a function called rectangle that draws a rectangle with given side lengths.
 # For example, here’s a rectangle that’s 80 units wide and 40 units tall.
 def rectangle(wide, tall):
+    """
+    Draws a rectangle with the given width and height
+
+    Parameters
+    ----------
+    wide : int or float
+        The width of the rectangle
+    tall : int or float
+        The height of the rectangle.
+
+    Returns
+    -------
+    None.
+
+    """
     for i in range(2):
         ralph.forward(wide)
         ralph.left(90)
