@@ -9,7 +9,7 @@ Created on Wed Jan 21 19:45:13 2026
 import turtle
 
 # create a turtle screen, with a yellow background
-wn = turtle.screen()
+wn = turtle.Screen()
 wn.bgcolor("lightyellow")
 
 # turtle is name Ralph(TMNT)
@@ -22,7 +22,13 @@ ralph.pensize(6)
 # Write a function called rectangle that draws a rectangle with given side lengths. 
 # For example, here’s a rectangle that’s 80 units wide and 40 units tall.
 def rectangle(wide, tall):
-    ralph.forward(wide)
-    ralph.left(90)
-    ralph.forward(tall)
+    for i in range(2):
+        ralph.left(90)
+        ralph.forward(tall)
+        ralph.left(90)
+        ralph.forward(wide)
 
+
+rectangle(80, 40)
+
+turtle.done()
