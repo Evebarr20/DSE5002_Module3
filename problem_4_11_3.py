@@ -15,14 +15,24 @@ SCREEN.bgcolor("lightyellow")
 
 # turtle is name Mikey (TMNT)
 
-mikey = turtle.Turtle()
-mikey.color("yellow")
-mikey.pensize(6)
+don = turtle.Turtle()
+don.color("purple")
+don.pensize(6)
 
-def parallelogram(bottom, slanted, angle):
-    for _ in range(4):
-        mikey.forward(bottom)
-        mikey.left(angle)
-        mikey.forward(slanted)
-        mikey.left(180 - angle)
-    
+def parallelogram(bottom, slanted, angle = 90):
+    for _ in range(2):
+        don.forward(bottom)
+        don.left(angle)
+        don.forward(slanted)
+        don.left(180 - angle)
+
+def rectangle(wide, tall):
+    parallelogram(wide, tall)
+
+def rhombus(length, angle):
+    parallelogram(length, length, angle)
+
+rectangle(80, 40)
+rhombus(50, 60)
+
+turtle.done()
